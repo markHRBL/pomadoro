@@ -57,6 +57,7 @@ function newTimer() {
         timer = setInterval(update, 1000);
     } else {
         startBtn.innerText = 'Start';
+        document.querySelector('.controls').classList.toggle('active');
         countDownEl.innerText = '00:00';
     }
 }
